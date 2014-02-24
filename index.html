@@ -87,32 +87,6 @@
       <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.0/modernizr.min.js"></script>
       <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>	
       <script src="assets/js/js.min.js"></script>
-      <script src="assets/js/lightbox.min.js"></script>
-      <script type="text/javascript">
-    $(document).ready(function ($) {
-
-		// delegate calls to data-toggle="lightbox"
-		$(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
-			event.preventDefault();
-			return $(this).ekkoLightbox({
-				onShown: function() {
-					if (window.console) {
-						return console.log('Photography');
-					}
-				}
-			});
-		});
-
-		//Programatically call
-		$('#open-image').click(function (e) {
-			e.preventDefault();
-			$(this).ekkoLightbox();
-		});
-		$('#open-youtube').click(function (e) {
-			e.preventDefault();
-			$(this).ekkoLightbox();
-		});
-	});
-</script>
+      <script src="assets/js/scripts.min.js"></script>
    </body>
 </html>
